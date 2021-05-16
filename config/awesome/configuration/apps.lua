@@ -12,7 +12,7 @@ return {
 		-- Default text editor
 		text_editor = 'code',
 		-- Default file manager
-		file_manager = 'dolphin',
+		file_manager = 'pcmanfm',
 		-- Default media player
 		multimedia = 'vlc',
 		-- Default game, can be a launcher like steam

@@ -153,7 +153,12 @@ local create_vertical_bar_dialog = function(c, pos, bg, size)
 			layout = wibox.layout.flex.vertical
 		},
 		nil,
-		layout = wibox.layout.align.vertical
+		layout = wibox.layout.align.vertical,
+		bg,
+		shape = function(cr, width, height)
+			gears.shape.partially_rounded_rect(cr, width, height, true, false, false, true, 9)
+		end,
+		widget = wibox.container.background
 	}
 end
 
@@ -182,7 +187,10 @@ local create_horizontal_bar_dialog = function(c, pos, bg, size)
 			layout = wibox.layout.flex.horizontal
 		},
 		nil,
-		layout = wibox.layout.align.horizontal
+		layout = wibox.layout.align.horizontal,
+		shape = function(cr, width, height)
+			gears.shape.partially_rounded_rect(cr, width, height, true, false, false, true, 9)
+		end,
 	}
 end
 

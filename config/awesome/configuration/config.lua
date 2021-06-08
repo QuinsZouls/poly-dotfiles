@@ -46,7 +46,7 @@ return {
 			-- Mic level
 			mic_level = '20',
 			-- FPS
-			fps = '30'
+			fps = '60'
 		}
 	},
 

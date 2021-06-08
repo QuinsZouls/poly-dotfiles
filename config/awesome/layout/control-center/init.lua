@@ -246,7 +246,7 @@ local control_center = function(s)
 		width = s.geometry.width,
 		height = s.geometry.height
 	}
-	
+
 	local open_panel = function()
 		local focused = awful.screen.focused()
 		panel_visible = true
@@ -263,7 +263,7 @@ local control_center = function(s)
 
 		focused.control_center.visible = false
 		focused.backdrop_control_center.visible = false
-		
+
 		panel:emit_signal('closed')
 	end
 

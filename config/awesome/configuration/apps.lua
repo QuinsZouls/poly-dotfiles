@@ -12,11 +12,11 @@ return {
 		-- Default text editor
 		text_editor = 'code',
 		-- Default file manager
-		file_manager = 'pcmanfm',
+		file_manager = 'dolphin',
 		-- Default media player
 		multimedia = 'vlc',
 		-- Default game, can be a launcher like steam
-		game = 'supertuxkart',
+		game = 'lutris',
 		-- Default graphics editor
 		graphics = 'gimp-2.10',
 		-- Default sandbox
@@ -24,7 +24,7 @@ return {
 		-- Default IDE
 		development = '',
 		-- Default network manager
-		network_manager = 'kitty iwctl',
+		network_manager = 'nm-connection-editor',
 		-- Default bluetooth manager
 		bluetooth_manager = 'blueman-manager',
 		-- Default power manager
@@ -65,6 +65,14 @@ return {
 		'xrdb $HOME/.Xresources',
 		-- Audio equalizer
 		'pulseeffects --gapplication-service',
+		--Keyboard layout
+		'setxkbmap latam',
+		--Screen config_dir
+		'xrandr --output eDP-1  --mode 1920x1080 --pos 0x1080 --rotate normal --output DP-1 --primary '..
+		'--mode 1920x1080 --rate 144 --pos 1920x1080 --rotate normal --output HDMI-1 --off --output HDMI-1-0 '..
+		'--mode 2560x1080 --pos 1280x0 --rotate normal --output DP-1-0 --off --output DP-1-1 --off',
+		--Graphic tablet
+		'xsetwacom set "HID 256c:006e stylus" MapToOutput HEAD-0',
 		-- Lockscreen timer
 		[[
 		xidlehook --not-when-fullscreen --not-when-audio --timer 600 \

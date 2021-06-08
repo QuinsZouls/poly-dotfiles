@@ -27,7 +27,7 @@ local bottom_panel = function(s)
 	end
 
 	s.search = require('widget.search-apps')()
-	
+
 	local separator =  wibox.widget {
 		orientation = 'vertical',
 		forced_height = dpi(1),

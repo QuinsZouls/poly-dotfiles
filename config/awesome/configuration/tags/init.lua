@@ -64,13 +64,13 @@ local tags = {
 		default_app = apps.default.development,
 		gap = beautiful.useless_gap,
 		layout = awful.layout.suit.floating
-	}
-	-- {
-	--   type = 'social',
-	--   icon = icons.social,
-	--   default_app = 'discord',
-	--   gap = beautiful.useless_gap
-	-- }
+	},
+	{
+    type = 'social',
+    icon = icons.social,
+	  default_app = 'discord',
+	  gap = beautiful.useless_gap
+	 }
 }
 
 -- Set tags layout

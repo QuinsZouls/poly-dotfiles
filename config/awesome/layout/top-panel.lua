@@ -30,14 +30,14 @@ local top_panel = function(s)
 
 	panel:connect_signal(
 		'mouse::enter',
-		function() 
+		function()
 			local w = mouse.current_wibox
 			if w then
 				w.cursor = 'left_ptr'
 			end
 		end
 	)
-	
+
 	s.systray = wibox.widget {
 		visible = false,
 		base_size = dpi(20),
@@ -57,6 +57,7 @@ local top_panel = function(s)
 	s.network       		= require('widget.network')()
 	s.control_center_toggle = require('widget.control-center-toggle')()
 	s.global_search			= require('widget.global-search')()
+	s.vertical_menu_toggle = require('widget.tag-center-toggle')()
 	s.info_center_toggle 	= require('widget.info-center-toggle')()
 
 	panel : setup {
@@ -66,7 +67,7 @@ local top_panel = function(s)
 			layout = wibox.layout.fixed.horizontal,
 			task_list(s),
 			add_button
-		}, 
+		},
 		clock,
 		{
 			layout = wibox.layout.fixed.horizontal,
@@ -85,7 +86,8 @@ local top_panel = function(s)
 			s.control_center_toggle,
 			s.global_search,
 			layout_box,
-			s.info_center_toggle
+			s.info_center_toggle,
+			s.vertical_menu_toggle,
 		}
 	}
 

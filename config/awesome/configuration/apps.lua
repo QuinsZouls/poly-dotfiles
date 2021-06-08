@@ -12,11 +12,11 @@ return {
 		-- Default text editor
 		text_editor = 'code',
 		-- Default file manager
-		file_manager = 'pcmanfm',
+		file_manager = 'cutefish-filemanager',
 		-- Default media player
 		multimedia = 'vlc',
 		-- Default game, can be a launcher like steam
-		game = 'supertuxkart',
+		game = 'lutris',
 		-- Default graphics editor
 		graphics = 'gimp-2.10',
 		-- Default sandbox
@@ -24,7 +24,7 @@ return {
 		-- Default IDE
 		development = '',
 		-- Default network manager
-		network_manager = 'kitty iwctl',
+		network_manager = 'nm-connection-editor',
 		-- Default bluetooth manager
 		bluetooth_manager = 'blueman-manager',
 		-- Default power manager
